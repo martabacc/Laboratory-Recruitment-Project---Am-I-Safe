@@ -18,6 +18,9 @@
 					var mapOptions = {
 						center: centerpoint,
 						zoom: 15,
+						draggable : false,
+						zoomControl : false,
+						scrollwheel : false,
 						mapTypeId: google.maps.MapTypeId.ROADMAP};
 					
 					map = new google.maps.Map(document.getElementById("mapDiv"), mapOptions);
