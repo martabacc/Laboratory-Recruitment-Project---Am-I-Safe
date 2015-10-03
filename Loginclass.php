@@ -34,7 +34,6 @@
 	    	$this->password=$result['Password'];
 	    	$this->fname=$result['Firstname'];
 	    	$this->lname=$result['Lastname'];
-	    	$this->point=$result['Points'];
 	    	$this->pictureid=$result['PictureID'];
 	    }
         
@@ -314,6 +313,14 @@
 								  </script>';
 		  		 }	
 			}
+	    }
+	    
+	    public function getUserFrames($username)
+	    {
+	    	$result = $this->db->query("SELECT COUNT(*) FROM frame WHERE f_user='$username'",PDO::FETCH_BOTH);
+	    	$kirim = $result->fetch();
+	    	$result->closeCursor();
+	    	return $kirim[0];
 	    }  
     
 	    

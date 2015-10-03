@@ -67,7 +67,7 @@
 	        	?>
 	        	
 	        	<h1> <?php echo $array['Firstname']." ".$array['Lastname'] ;?>  </h1>
-	        	<h2> Frame update :  <?php echo $array['Points'];?> </h2>
+	        	<h2> Frame update :  <?php echo $user->getUserFrames($username) ?> </h2>
         	</div>
         	
         	<?php 

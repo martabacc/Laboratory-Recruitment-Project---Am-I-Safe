@@ -25,16 +25,18 @@
 					
 					
 					if(navigator.geolocation)
-					{	navigator.geolocation.getCurrentPosition(function(position){
+					{	
+// 						alert("eaaa"); --> oke!
+						navigator.geolocation.getCurrentPosition(function(position){
 								centerpoint = new google.maps.LatLng(position.coords.latitude,
 																	 position.coords.longitude);
 								
-								
+								alert("lalalla " + position.coords.latitude + " " + osition.coords.longitude );
 								y.value = position.coords.latitude;
 								z.value = position.coords.longitude;
 					
 								geocoder.geocode({"latLng":centerpoint}, function(results, status){
-						        	//alert("lalalla");
+						        	
 						    		if(status == google.maps.GeocoderStatus.OK){
 						    			if(results[0])
 						    			{
@@ -61,6 +63,7 @@
 					}
 					else 
 					{
+					alert("eaaa"); //statusUNai
                			 x.innerHTML = "Maaf, fitur ini hanya bisa diakses di oleh device yang support Geolocation";
                			 document.getElementById("cover").style.display="none";
                		}
@@ -78,29 +81,27 @@
 					var al = div.value;
 					
 					geocoding.geocode({"address":al},function(results,status){
-						alert("geocoding");
+						//alert("geocoding");
 					
 						if(status == google.maps.GeocoderStatus.OK){
 							if(results[0])
 						    {
 						    		centerpoint = results[0].geometry.location;
-									map.setCenter(results[0].geometry.location);
+									map.setCenter(centerpoint);
 										
 									var markme = new google.maps.Marker({
 									map : map,
 									position: centerpoint,
 									animation : google.maps.Animation.BOUNCE,
-								});	
-					         //   console.log(results[0].geometry.location[lat]);
-                             console.log(toString(results[0].geometry.location));
-//								
-								//ubah(results[0].formatted_address);
-//                                console.log(div.value);
+									});	
+									
+									div.value = results[0].formatted_address;
+									document.getElementById("latitude").value = results[0].geometry.location.lat() ; results[0].geometry.location.lng()
+									document.getElementById("longitude").value = results[0].geometry.location.lng() ; 
 						    }
 							
 							
 						}
-                        
                         
 						else if(status == google.maps.GeocoderStatus.OVER_QUERY_LIMIT){
 							alert("Query Limit Detected");
@@ -119,12 +120,6 @@
 					});
 				}
 				
-                function ubah(teks,lat,lng)
-                        {
-          			          document.getElementById("latitude").value = lat;
-          			          document.getElementById("longitude").value = lng;
-                              document.getElementById("alamat").value=teks;
-                        }
 						';
 				echo ' google.maps.event.addDomListener(window, '.$load.', initMap);
 					   
