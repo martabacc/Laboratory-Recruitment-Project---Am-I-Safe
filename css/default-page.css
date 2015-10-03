@@ -34,6 +34,7 @@ body{
 }
 
 .coba #left{
+
     position:fixed;
     margin: 0 0 0 10px; 
     bottom:0;
@@ -42,13 +43,18 @@ body{
     background-color:transparent;
     float: left;
 } 
+
+.coba #left *
+{
+    border : 1px dotted black;
+}
 .coba #left img{
     margin: -115px 0 0 0;
     width:100%;
 } 
 
 .coba #left #menu{
-    margin: -10px 0 0 0;
+    margin: 0 0 0 0;
     display:none;
 }
 
@@ -66,12 +72,19 @@ body{
     padding-bottom:7%;
     
 }
-.coba #left #menu ul li a{
+.coba #left #menu ul li a
+{
     text-decoration: none;
     
 }
+.coba #left #menu ul li a:visited
+{
+    text-decoration: none;
+    
+}
+
 .coba #left #menu ul li:hover a{
-    font-size: 1.5em; 
+    font-size: 1.4em; 
     transition-duration: .10s;
 }
 
@@ -83,7 +96,7 @@ body{
     margin-right:5%;
     width: 70%;
     padding:15px;
-    
+	min-height:100%;
     float: right;
     
     -moz-border-radius:15px;
@@ -95,8 +108,7 @@ body{
 	-webkit-border: 3px solid #009900;
 	-o-border: 3px solid #009900;
 	border: 3px solid #009900;
-    
-    background-color: white;
+
 }
 
 

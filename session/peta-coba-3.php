@@ -40,8 +40,6 @@
 						$map = new Frame();
 						
 						$getMark = $map->forMaps();
-						
-						
 						foreach ( $getMark as $row) 
 						{   echo "{
 							id:'". $row['F_ID']."',

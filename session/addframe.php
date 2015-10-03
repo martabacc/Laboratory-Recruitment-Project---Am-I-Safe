@@ -59,8 +59,8 @@
             
         <form id="registrasi" enctype="multipart/form-data"  style="display:block" action="" method="post">
 
-                <input type="hidden"  id="latitude" name="latitude" required  />
-                <input type="hidden"  id="longitude" name="longitude"  required  />
+                <input type="text"  id="latitude" name="latitude" required  />
+                <input type="text"  id="longitude" name="longitude"  required  />
             
 
             <div class='clearfix'></div> 

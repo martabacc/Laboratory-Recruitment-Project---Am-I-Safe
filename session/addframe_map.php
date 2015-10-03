@@ -91,10 +91,10 @@
 									position: centerpoint,
 									animation : google.maps.Animation.BOUNCE,
 								});	
-					         //   console.log(results[0].geometry.location.lat);
+					         //   console.log(results[0].geometry.location[lat]);
                              console.log(toString(results[0].geometry.location));
 //								
-								  ubah(results[0].formatted_address,, );
+								//ubah(results[0].formatted_address);
 //                                console.log(div.value);
 						    }
 							
