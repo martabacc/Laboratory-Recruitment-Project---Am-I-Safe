@@ -1,0 +1,50 @@
+body{
+    height:100%;
+    background-size:100%;
+    font-family:BigNoodle;
+    background-image: url('../src/index.jpg');
+    
+}
+
+#wrapper{
+    font-size:2em;
+}
+
+#login-box{
+    margin-left:10%;
+    margin-top:10%;
+    background-color:transparent;
+    width:40%;
+    height:auto;
+    opacity:100%;
+}
+
+#login-box legend{
+    font-size:1.9em;
+    border-bottom: 2px solid green;
+}
+#login-box legend:hover{
+    border-bottom: 3px solid green;
+}
+
+#login-box fieldset{
+    border:none;
+}
+
+#login-box input{
+    position:relative;
+    height:2em;
+}
+#login-box input:focus{
+    position:relative;
+    height:2em;
+}
+
+.main .bigbox{
+	
+}
+
+fieldset{
+	border:none;
+}
+

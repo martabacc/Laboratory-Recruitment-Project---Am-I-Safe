@@ -1,0 +1,102 @@
+html,body{
+    size:100%;
+    font-size:1.1em;
+    font-weight: auto;
+}
+
+body{
+	font-family: Titling;
+}
+
+#page-loader
+{
+	position:fixed !important;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	z-index:9999;
+	background:Black url('../src/rotatingearth.gif') no-repeat 50% 50%;
+	font:0/0;
+	text-shadow:none;
+	padding:1em 1.2em;
+	display:none;
+	opacity:0.7
+}
+
+.coba{
+      position:absolute;
+      left:30px;
+      top:0;
+      background: url('../src/dotmap.png');
+      min-height:100%;
+      min-width: 95%;
+}
+
+.coba #left{
+    position:fixed;
+    margin: 0 0 0 10px; 
+    bottom:0;
+    width:15%;
+    height:auto;
+    background-color:transparent;
+    float: left;
+} 
+.coba #left img{
+    margin: -115px 0 0 0;
+    width:100%;
+} 
+
+.coba #left #menu{
+    margin: -10px 0 0 0;
+    display:none;
+}
+
+.coba #left #menu ul{
+    padding-left:0;
+    list-style-type: none;
+}
+
+.coba #left #menu ul li{
+    width:100%;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: BigNoodle;
+    padding-top:5%;
+    padding-bottom:7%;
+    
+}
+.coba #left #menu ul li a{
+    text-decoration: none;
+    
+}
+.coba #left #menu ul li:hover a{
+    font-size: 1.5em; 
+    transition-duration: .10s;
+}
+
+
+.coba #right{
+
+    position:relative;
+    margin: 10px 20px 0 10px; 
+    margin-right:5%;
+    width: 70%;
+    padding:15px;
+    
+    float: right;
+    
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    -o-border-radius: 15px;
+    border-radius:15px;
+    
+   -moz-border: 3px solid #009900;
+	-webkit-border: 3px solid #009900;
+	-o-border: 3px solid #009900;
+	border: 3px solid #009900;
+    
+    background-color: white;
+}
+
+

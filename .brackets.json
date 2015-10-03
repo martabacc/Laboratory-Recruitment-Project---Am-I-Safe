@@ -1,0 +1,11 @@
+{
+    "php-sig.php-smarthints.filteredFunctionList": [
+        "apc",
+        "apd",
+        "http",
+        "mysql",
+        "mysqli",
+        "pdo",
+        "bcompiler"
+    ]
+}

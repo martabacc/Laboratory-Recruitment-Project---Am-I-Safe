@@ -1,0 +1,39 @@
+.no-js #loader{
+    display : none;
+}
+
+.js #loader {
+    display : block;
+    position: absolute;
+/*    position lalalla*/
+    
+}
+
+#preloader {
+/*    position lalala*/
+    position : fixed;
+    z-index : 9999;
+    left: 40%;
+    top: 40%;
+    size:100%;
+    background: url(../../testpweb3/src/preloader/128x128/Preloader_10.gif) center no-repeat #fff;
+}
+
+html{
+	height:100%;
+}
+
+body{
+	height: 100%;
+	margin : 0;
+}
+
+#mapDiv{
+	height:100%;
+}
+
+
+.coba #right #mapDiv{
+    height:350px;
+}
+

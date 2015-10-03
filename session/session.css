@@ -1,0 +1,145 @@
+
+
+#header
+{
+    border-bottom: 2px solid green;
+}
+
+.coba #right button, .coba #right input[type=submit]
+{
+	position:relative;
+	float:right;
+	background:white;
+	font-size:1em;
+	opacity:1;
+	margin : 1% 2% auto auto;
+	font-family : Titling;
+	width:auto;
+	padding: 7px;
+	cursor : pointer;
+	border: 1px solid #EfEfEf;
+	display:block;
+	-moz-border-radius:5px;
+	-webkit--border-radius:5px;
+	border-radius:5px;
+	
+	margin-bottom:10px;
+	margin-top:15px;
+
+}
+
+.coba #right button:hover, .coba #right input[type=submit]:hover
+{
+	border-color: #090;
+    -webkit-border-radius:5px 5px 5px 5px;
+    -moz-border-radius:5px 5px 5px 5px;
+    border-radius:5px 5px 5px 5px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	
+	
+}
+
+.coba #right #boxes
+{
+	padding: 2%;
+    position:relative;
+    font-weight:300;
+    font-family:BigNoodle;
+    
+}
+
+
+
+.coba #right #boxes img
+{
+    width:120px;
+    float:left;
+}
+
+.coba #right .main-body  img
+{
+	float:right;
+	max-width:15px;
+	margin-right:10%;
+}
+
+.coba #right .main-body form img
+{
+	float:right;
+	max-width:15px;
+	margin-right:10%;
+}
+
+.coba #right .postingan
+{	
+    float:left;
+	padding-top:3px;
+	padding-bottom:7px;
+	margin: 3px;
+	font-size:0.9em;
+	background: #edf5e1;
+	width:100%;
+	opacity: 0.8;
+	height:auto;
+}
+
+
+.coba #right .postingan:hover
+{	
+	-moz-box-shadow : 0 0 5px 5px #888;
+	-webkit-box-shadow : 0 0 5px 5px #888;
+	box-shadow:0 0 5px 5px #888;
+	opacity: 1;
+}
+
+
+.coba #right .postingan .pp
+{
+	float:left;
+	left:0;
+	width:90px;
+}
+
+.coba #right .postingan .delicon
+{
+	float:right;
+	padding-top:10px;
+	width:30px;
+	padding-right: 10px;
+	
+}
+
+.coba #right .postingan .alamat
+{
+	font-size:1em;
+}
+
+
+.coba #right .postingan .bukti
+{
+    width:97%;
+    float:left;
+    display:none;
+    border-top: 2px solid green;
+	padding-top:20px;
+	background-color:transparent;
+}
+
+.coba #right .postingan .bukti .descimg
+{
+	width:100%;
+	margin:3px;
+}
+.coba #right .postingan .bukti .descwdimg
+{
+	width:100%;
+	margin:3px;
+}
+.coba #right .postingan .bukti .descnoimg
+{	
+	width:100%;
+	margin:3px;
+	
+}

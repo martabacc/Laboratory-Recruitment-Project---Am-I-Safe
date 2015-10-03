@@ -1,0 +1,181 @@
+*:focus{
+    outline:none;
+    
+}
+#right
+{
+	background-color:white;
+    height:auto;
+    padding-bottom:20px;
+}
+
+#right #header{
+    border-bottom: 2px solid green;
+}
+
+#right form{
+    margin: 20px auto;
+    padding-bottom: 5%;
+}
+
+#right p
+{
+    line-height:1.6;
+}
+
+#form
+{
+    margin:auto;
+    width:90%;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+    font:1.25em 'BigNoodle', sans-serif;
+}
+
+#form label
+{
+    float:left;
+    width:10%;
+    color:black;
+    text-align:right;
+    padding-right:10px;
+}
+
+#form input, #form textarea,#form file,#form select{
+    background-color:#fff;
+    border:1px solid #ccc;
+    color:black;
+    font-size:0.6em;
+    margin-bottom:20px;
+    padding:8px;
+    width:25%;
+    display:block;
+    float:left;
+    -webkit-border-radius: 10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    
+    	
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+    
+}
+
+#form select{
+	font-size:0.6em;
+	width:26%;
+}
+#form textarea{
+    min-height:200px;
+}
+
+#form input:hover, #form textarea:hover{
+    border-color:inherit !important;
+    background-color: #EfEfEf;
+    -webkit-border-radius:5px 0 0 5px;
+    -moz-border-radius:5px 0 0 5px;
+    border-radius:5px 0 0 5px;
+}
+
+#form input:not(:focus), #form form:not(:focus){
+    opacity:0.6;
+}
+
+#form input:required,#form textarea:required{
+    
+}
+
+#form input:valid, #form textarea:valid{
+    opacity:0.8;
+}
+
+#form input:focus:invalid, #form textarea:focus:invalid{
+    border:1px solid red;
+    background-color: #FFEFF0;
+    
+}
+
+#form input[type=submit] {
+	
+	background:none;
+	font-size:15px;
+	opacity:1;
+	padding:5px;
+	width:150px;
+	-moz-border-radius:5px;
+	-webkit--border-radius:5px;
+	border-radius:5px;
+	cursor:pointer;
+	margin-bottom:-10px;
+	margin-left:103px;
+	margin-top:10px;
+
+    background-color:#EfEfEf;
+	text-shadow:1px 1px 0 #FFFFFF;
+	border-color:#DDDDDD #DDDDDD #CCCCCC;
+    color:black;
+}
+
+#form .outerDiv{
+	-webkit-transition: all 1s linear;
+	margin-bottom:16px;
+	margin-top:8px;
+}
+
+#form .outerDiv:hover .message{
+	opacity:1;
+	font-size:0.7em;
+	display:block;
+}
+
+
+#form .message{	
+	width:inherit;
+	float:left;
+	opacity:0;
+	-moz-border-radius:0 10px 10px 0;
+	-webkit-border-radius:0 10px 10px 0;
+
+	color:black;
+	display:none;
+	
+	padding : 0.2em 0.2em 0.2em 0.4em;
+	font-size:0.6em;
+	line-height:1.45em;
+	text-transform:lowercase;
+}
+
+.clearfix{
+	clear:both;
+}
+
+#form #alamat{
+	width:86%;
+	margin-bottom:none;
+}
+
+#form .outerDiv p{
+	width:auto;
+    background-color:#fff;
+    margin-left:12%;
+    font-family:none;
+    color:red;
+    font-size:0.6em;
+    
+    float:left;
+    -webkit-border-radius: 10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    
+}
+#form .outerDiv #click{
+	float:left;
+	font-size:12px;
+	margin: 2% auto auto 2%;
+    
+}
+
+#form #cekalamat input {
+	margin-bottom:0;
+}

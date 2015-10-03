@@ -1,0 +1,31 @@
+.coba #right{
+}
+
+
+.coba #right #header{
+    font-family:Titling;
+    font-size:1.5em;
+    text-align:center;
+    border-bottom: 2px solid green;
+    padding-bottom:0;
+}
+
+
+.coba #right .main-body{
+    background-color:transparent;
+    
+    
+}
+
+
+.coba #right .main-body img{
+    background-color:transparent;
+    float:right;
+    width:160px;
+    
+}
+
+.coba #right .main-body form{
+    background-size: auto;
+}
+
