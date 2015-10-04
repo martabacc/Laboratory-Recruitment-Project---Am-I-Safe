@@ -7,7 +7,8 @@
 				var centerpoint = new google.maps.LatLng(-7.2756195,112.7116844,12);
 				var geocoder;
 				var map;	
-				function initMap () {
+				function initMap () 
+                {
 					var x = document.getElementById("notification");
           			var y = document.getElementById("latitude");
             		var z = document.getElementById("longitude");
@@ -16,10 +17,8 @@
 					var mapOptions = {
 						center: centerpoint,
 						zoom: 15,
-						draggable : false,
-						zoomControl : false,
-						scrollwheel : false,
-						mapTypeId: google.maps.MapTypeId.ROADMAP};
+						mapTypeId: google.maps.MapTypeId.ROADMAP
+                    };
 					
 					map = new google.maps.Map(document.getElementById("mapDiv"), mapOptions);
 					

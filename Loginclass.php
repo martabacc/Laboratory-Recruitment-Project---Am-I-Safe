@@ -80,7 +80,7 @@
 	    		session_start();
 	    		$_SESSION['user']=$cookuser;
 	    		echo '<script languange="javascript">
-					       alert("Cookie login");
+					       // alert("Cookie login");
 						   document.location="session/index.php"
 						   </script>';
 	    	}
@@ -120,12 +120,12 @@
 			    	if(isset($_POST['keeplogged'])){
 			    		setcookie('login', $username.','.md5($username.$this->secret),$date,'/');
 			    		echo '<script languange="javascript">
-					       alert("Cookie set until '. date(DATE_RFC850,$date) .'");
+					       //alert("Cookie set until '. date(DATE_RFC850,$date) .'");
 						   document.location="session/index.php"
 						   </script>';
 			    	}
 			    	else echo '<script languange="javascript">
-					      		 alert("Cookie is not set");
+					      		 //alert("Cookie is not set");
 						  		 document.location="session/index.php"
 						  	 	 </script>';
 	    		}
@@ -365,9 +365,8 @@
 	   			$this->db->beginTransaction();
 	   			$result = $this->db->exec("insert into frame (f_id, f_lat, f_long,f_user,kategori,f_time,deskripsi, attachmentid,alamat)
 	   										values ( DEFAULT, $lat ,$long,'$username','$kategori',now(),'$deskripsi','','$alamat')");
-	   			$userpoint = $this->db->exec("update user set points=points+1 where username='$username'");
 	   			
-		        if($result && $userpoint){
+		        if($result){
 		        	if($_FILES['attachment']['name']!=NULL){
 		        		$file_name = $_FILES['attachment']['name'];
 		        		$file_tmpname = $_FILES['attachment']['tmp_name'];

@@ -45,7 +45,7 @@
     background-color:#fff;
     border:1px solid #ccc;
     color:black;
-    font-size:0.6em;
+    font-size:1em;
     margin-bottom:20px;
     padding:8px;
     width:25%;
@@ -63,7 +63,7 @@
 }
 
 #form select{
-	font-size:0.6em;
+	font-size:0.9em;
 	width:26%;
 }
 #form textarea{

@@ -14,7 +14,8 @@
 <html>
 
 <head>
-    <title> Special Menu </title>
+    <title><?php echo $array['Firstname']." ".$array['Lastname'];  ?> </title>
+    <link rel="shortcut icon" href="../src/koki_2.ico">
     <script src="../js/jquery.min.js"></script>
     <script src="../js/defaultpage.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>

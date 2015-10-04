@@ -2,7 +2,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title> Am I Safe? </title>
+    <title>Dashboard</title>
+    <link rel="shortcut icon" href="../src/koki_2.ico">
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	<script src="../js/jquery.min.js" ></script>
     <script src="../js/defaultpage.js"></script>
@@ -30,7 +31,8 @@
                         
             });
             
-            function beritahu(){
+            function beritahu()
+            {
   	  			$('#preloader').hide();
                 $('#setuju').fadeOut('slow');
             }

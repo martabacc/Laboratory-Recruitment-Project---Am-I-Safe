@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title> Am I Safe? </title>
+    <title>Peta</title>
+    <link rel="shortcut icon" href="../src/koki_2.ico">
 	<script src="../js/jquery.min.js" ></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>

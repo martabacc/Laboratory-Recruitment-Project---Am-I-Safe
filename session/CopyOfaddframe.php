@@ -12,7 +12,7 @@
 <html>
 
 <head>
-    <title> Special Menu </title>
+    <title>Tambah Kejadian</title>
     <script  type="text/javascript" src="../js/jquery.min.js"></script>
   	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
     <script  type="text/javascript" src="../js/defaultpage.js"></script>

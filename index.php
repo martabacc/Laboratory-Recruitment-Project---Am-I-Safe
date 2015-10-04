@@ -4,7 +4,7 @@
 
 <html>
     <head>
-    <title> Am I Safe? </title>
+    <title>Am I Safe?</title>
     
     <link type="text/css" rel="stylesheet" href="css/index.css">
     <link type="text/css" rel="stylesheet" href="css/fonts.css">

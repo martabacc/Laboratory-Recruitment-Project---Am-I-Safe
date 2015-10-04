@@ -44,9 +44,9 @@
 		        	$titik['kategori'] = strtoupper($titik['kategori']);
 		        	
 		        	if( $titik['alamat']!=NULL || $titik['alamat']!='' || !$titik['alamat'] )
-		        		echo "	<h2 class='alamat'> " . $titik['kategori'] . "   -  " . $waktu ." ( ".$titik['f_user']." ) <br> di ".$titik['alamat']."  </h2> ";
+		        		echo "	<h2 class='alamat'> " . $titik['kategori'] . " Radius -> " . $titik['jarak']. "   -  " . $waktu ." ( ".$titik['f_user']." ) <br> di ".$titik['alamat']."  </h2> ";
 		        	else
-		        		echo "	<h2 class='alamat'> " . $titik['kategori'] . "   -  " . $waktu ." ( ".$titik['f_user']." ) <br> di </h2> ";
+		        		echo "	<h2 class='alamat'> " . $titik['kategori'] .  " Radius -> " . $titik['jarak']. "   -  " . $waktu ." ( ".$titik['f_user']." ) <br> di </h2> ";
 		        	
 		        	
 		        	echo " <div class='clearfix'></div> ";

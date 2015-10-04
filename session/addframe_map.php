@@ -18,9 +18,6 @@
 					var mapOptions = {
 						center: centerpoint,
 						zoom: 15,
-						draggable : false,
-						zoomControl : false,
-						scrollwheel : false,
 						mapTypeId: google.maps.MapTypeId.ROADMAP};
 					
 					map = new google.maps.Map(document.getElementById("mapDiv"), mapOptions);
@@ -29,12 +26,11 @@
 					
 					if(navigator.geolocation)
 					{	
-// 						alert("eaaa"); --> oke!
 						navigator.geolocation.getCurrentPosition(function(position){
 								centerpoint = new google.maps.LatLng(position.coords.latitude,
 																	 position.coords.longitude);
 								
-								alert("lalalla " + position.coords.latitude + " " + osition.coords.longitude );
+								//alert("lalalla " + position.coords.latitude + " " + position.coords.longitude );
 								y.value = position.coords.latitude;
 								z.value = position.coords.longitude;
 					
@@ -66,7 +62,6 @@
 					}
 					else 
 					{
-					alert("eaaa"); //statusUNai
                			 x.innerHTML = "Maaf, fitur ini hanya bisa diakses di oleh device yang support Geolocation";
                			 document.getElementById("cover").style.display="none";
                		}
@@ -84,7 +79,6 @@
 					var al = div.value;
 					
 					geocoding.geocode({"address":al},function(results,status){
-						//alert("geocoding");
 					
 						if(status == google.maps.GeocoderStatus.OK){
 							if(results[0])
@@ -95,11 +89,11 @@
 									var markme = new google.maps.Marker({
 									map : map,
 									position: centerpoint,
-									animation : google.maps.Animation.BOUNCE,
+									animation : google.maps.Animation.BOUNCE
 									});	
 									
 									div.value = results[0].formatted_address;
-									document.getElementById("latitude").value = results[0].geometry.location.lat() ; results[0].geometry.location.lng()
+									document.getElementById("latitude").value = results[0].geometry.location.lat() ; 
 									document.getElementById("longitude").value = results[0].geometry.location.lng() ; 
 						    }
 							
@@ -121,9 +115,7 @@
 							alert("Maaf alamat tersebut tidak dapat ditemukan");
 						}
 					});
-				}
-				
-						';
+				}';
 				echo ' google.maps.event.addDomListener(window, '.$load.', initMap);
 					   
 						

@@ -15,9 +15,10 @@
 <html>
 
 <head>
-    <title> Am I Safe? </title>
+    <title><?php echo $array['Firstname']." ".$array['Lastname'];  ?></title>
     <script src="../js/jquery.min.js"></script>
     <script src="../js/defaultpage.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="editprofile.css" type="text/css">
     <link rel="stylesheet" href="../css/default-page.css" type="text/css">
     <link rel="stylesheet" href="session.css" type="text/css">
@@ -54,34 +55,36 @@
         	<div class="main-body">
         		
 			        	<form enctype="multipart/form-data" name="registrasi" action="" method="post">
-			                    <fieldset>
-		                            <?php 
-		        			if(!$array['PictureID'])
-		        				echo	'<img src=  "../userdata/default.jpg" >';
-		        			else{
-		        				echo '<img src = "viewimage.php?id='.$array['PictureID'].'" >';
-		        				
-		        			}
-		        		?>
+                                    <div id='profpic'>
+                                        <h3>Current Pict.</h3>
+                                        <?php 
+                                            if(!$array['PictureID'])
+                                                echo	'<img src=  "../userdata/default.jpg" >';
+                                            else
+                                                echo '<img src = "viewimage.php?id='.$array['PictureID'].'" >';
+                                
+                                        ?>
+                                    </div>
+		                            
 	                       	<p>
-	                       		<label> Username : <input type="text" name="username" value="<?php echo $array['Username'];?>" disabled ></label>
+	                       		<label>Username : <input type="text" name="username" value="<?php echo $array['Username'];?>" disabled ></label>
 	                        </p>
 	                        <p>
-	                        	<label> Nama Depan : <input type="text" name="fname" value="<?php echo $array['Firstname'];?>" required ></label>
+	                        	<label>Nama Depan : <input type="text" name="fname" value="<?php echo $array['Firstname'];?>" required ></label>
 	                        </p>
 	                        <p>
-	                        	<label> Nama Belakang : <input type="text" name="lname" value="<?php echo $array['Lastname'];?>"  required ></label>
+	                        	<label>Nama Belakang : <input type="text" name="lname" value="<?php echo $array['Lastname'];?>"  required ></label>
 	                        </p>
 	                        <p>
-	                        <label> Profile Picture :  <input type="file" name="photo" id="photo" ></label>
+	                        <label>Profile Picture :  <input type="file" name="photo" id="photo" ></label>
 	                        </p>
 	                        <p>
-	                        	<label> New Password :  <input type="password" name="newpass" required ></label>
+	                        	<label>New Password :  <input type="password" name="newpass" required ></label>
 	                        </p>
 
 	                        <div id="validation">
 		                         <p>
-		                        <label> Enter Your Password to Save Changes :  <input type="password" name="oldpass" required></label>
+		                        <label>Old-Password <input type="password" name="oldpass" required></label>
 		                        </p>
 	                        </div>
 	                        
@@ -90,7 +93,6 @@
 										$user->editUser();
 									?>
 	
-	                    </fieldset>
 	                </form>
             </div>
         </div>

@@ -32,7 +32,8 @@
 <html>
 
 <head>
-    <title> Am I Safe? </title>
+    <title>Ubah Kejadian</title>
+    <link rel="shortcut icon" href="../src/koki_2.ico">
     <script src="../js/jquery.min.js"></script>
     <script src="../js/defaultpage.js"></script>
     <link rel="stylesheet" href="../css/default-page.css" type="text/css">

@@ -51,7 +51,6 @@
 }
 
 
-
 .coba #right #boxes img
 {
     width:120px;
@@ -61,17 +60,16 @@
 .coba #right .main-body  img
 {
 	float:right;
-	max-width:15px;
-	margin-right:10%;
+    max-width:15rem;
+    right:0;
+	margin-right:5%;
 }
 
-.coba #right .main-body form img
+.coba #right .main-body  #profpic
 {
 	float:right;
-	max-width:15px;
-	margin-right:10%;
+    right:0;
 }
-
 .coba #right .postingan
 {	
     float:left;

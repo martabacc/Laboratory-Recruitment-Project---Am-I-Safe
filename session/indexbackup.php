@@ -8,7 +8,7 @@
 <html>
 
 <head>
-    <title> Special Menu </title>
+    <title>Am I Safe?</title>
     <script src="../js/jquery.min.js"></script>
     <script src="../js/defaultpage.js"></script>
     <link rel="stylesheet" href="../css/default-page.css" type="text/css">

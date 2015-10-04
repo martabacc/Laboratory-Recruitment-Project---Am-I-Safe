@@ -12,7 +12,8 @@
 <html>
 
 <head>
-    <title> Am I Safe? </title>
+    <title>Tambah Kejadian</title>
+    <link rel="shortcut icon" href="../src/koki_2.ico">
     <script  type="text/javascript" src="../js/jquery.min.js"></script>
   	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
                <?php include 'addframe_map.php';?>
@@ -21,7 +22,8 @@
     <link rel="stylesheet" href="addframe.css" type="text/css">
     <link rel="stylesheet" href="../css/fonts.css" type="text/css">
     <link rel="stylesheet" href="maps.css" type="text/css">
- 
+    <link rel="stylesheet" href="../css/normalize.css" type="text/css">
+
 </head>
 
 <body>
@@ -78,6 +80,9 @@
                   <option value="Curanmor">Curanmor</option>
                   <option value="Kecelakaan">Kecelakaan</option>
                   <option value="Begal">Begal</option>
+                  <option value="Perampokan">Perampokan</option>
+                  <option value="Jembatan Runtuh">Jembatan Runtuh</option>
+                  <option value="Tanah Longsor">Tanah Longsor</option>
                   </select>
                 <div class='message' id='nameDiv'>Kategori kejadian </div>
                </div>  

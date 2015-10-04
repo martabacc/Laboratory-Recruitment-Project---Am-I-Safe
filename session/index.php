@@ -8,7 +8,8 @@
 <html>
 
 <head>
-    <title> Am I Safe? </title>
+    <title>Am I Safe?</title>
+    <link rel="shortcut icon" href="../src/koki_2.ico">
     <script src="../js/jquery.min.js"> </script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script src="../js/defaultpage.js"></script>
